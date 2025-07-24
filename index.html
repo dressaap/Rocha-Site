@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocha Security</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8b0000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://rochasecurity.com/wp-content/uploads/2022/11/banner-site.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px #000;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .section {
+      padding: 60px 40px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #8b0000;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; /* centraliza horizontalmente o conteúdo */
+      height: 340px; /* ajuste conforme necessário */
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .service-box img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .service-box button {
+      margin-top: 15px;
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .footer {
+      background: #222;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .solicitar-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .solicitar-btn:hover {
+      background-color: #a30000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <img src="rochalogo.png" alt="Rocha Security Logo" style="height: 180px; margin-bottom: 20px;">
+      <h1 style="color: #000; text-shadow: none;">Segurança que protege o que importa</h1>
+      <p style="color: #000; text-shadow: none;">Serviços profissionais com excelência e confiança</p>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <h2>Quem Somos</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">
+      Somos uma empresa especializada em serviços de Instalação e manutenção de sistemas de segurança. Câmeras de segurança, instalação de cercas elétricas, sistemas de alarmes residencial e comercial, CTFV, nobreak e muito mais! A Rocha Security - Segurança Eletrônica trabalha com técnicos especializados realizando projetos de instalação completa de sistemas de segurança para imóveis, seja casas, residências, comércios ou empresas.
+    </p>
+  </section>
+
+  <section class="section" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios/50/network-cable.png" alt="Cabeamento">
+        <h3>Cabeamento Estrutural</h3>
+        <p>Infraestrutura padronizada para redes de dados, voz e imagem em empresas ou residências.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="controleacesso.png" alt="Controle de Acesso">
+        <h3>Controle de Acesso</h3>
+        <p>Sistema que limita a entrada de pessoas em locais por meio de senhas, cartões ou biometria.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="cftv.png" alt="CFTV">
+        <h3>CFTV</h3>
+        <p>Circuito fechado de TV usado para monitoramento por câmeras de segurança.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="interfone.png" alt="Interfone">
+        <h3>Interfone</h3>
+        <p>Dispositivo de comunicação entre ambientes, geralmente usado em portarias.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="videoporteiro.png" alt="Vídeo Porteiro">
+        <h3>Vídeo Porteiro</h3>
+        <p>Interfone com câmera, permite ver quem está na porta antes de atender.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="motor.png" alt="Motor Automatizado">
+        <h3>Motor Automatizado</h3>
+        <p>Motor elétrico usado para abrir e fechar portões automaticamente.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios/50/smart-home-automation.png" alt="Casa Inteligente">
+        <h3>Casa Inteligente</h3>
+        <p>Automação residencial para controlar luzes, segurança, som e mais via celular ou assistente virtual.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios/50/flash-on.png" alt="Padrão Neoenergia">
+        <h3>Padrão Neoenergia</h3>
+        <p>Instalação elétrica que segue os requisitos técnicos da concessionária Neoenergia para fornecimento de energia.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios/50/solar-panel.png" alt="Energia Fotovoltaica">
+        <h3>Energia Fotovoltaica</h3>
+        <p>Sistema que converte luz solar em energia elétrica através de painéis solares.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios/50/electrical.png" alt="Projetos Elétricos">
+        <h3>Projetos Elétricos</h3>
+        <p>Planejamento técnico de instalações elétricas para obras, com segurança e eficiência.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+      <div class="service-box">
+        <img src="carregador.veicular.png" alt="Carregador Veicular">
+        <h3>Carregador Veicular</h3>
+        <p>Equipamento usado para carregar baterias de carros elétricos.</p>
+        <a href="https://wa.me/61995804032?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="solicitar-btn">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <h2>Fale Conosco</h2>
+    <p style="text-align: center;">Entre em contato para orçamentos ou dúvidas:</p>
+    <p style="text-align: center;">WhatsApp: (61) 99580-4032 | E-mail: maikonandrews@gmail.com</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rocha Security. Todos os direitos reservados.</p>
+  </footer>
+
+  <a class="whatsapp-button" href="https://wa.me/61995804032" target="_blank">WhatsApp</a>
+</body>
+</html>
